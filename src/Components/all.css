@@ -1,0 +1,156 @@
+body {
+    background-color:  #fff;
+}
+.spilt {
+    display: flex;
+    padding: 15px 20px;
+    gap: 50px
+}
+.dark .navbar {
+    background-color:  rgb(21, 17, 17);
+    color: #fff;
+}
+.dark .spilt {
+    background-color:  rgb(35, 27, 27);
+    color: #fff;
+}
+.dark .simi p,
+.dark .sear input {
+    background-color: #2f1b1b;
+}
+.dark .sear input {
+    border: none;
+}
+.dark .simi p:hover {
+    background-color: #726a6a;
+}
+.dark .navbar h2,
+.dark .navbar button {
+    color: #fff; 
+ }
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px;
+    /* background-color: rgb(21, 17, 17); */
+    background: #fff;
+    color: black;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+.navbar h2 {
+    font-size: 20px;
+}
+.navbar button {
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    color: black;
+}
+/* END OF NAVBAR */
+.welcome {
+    text-align: center;
+    margin-top: 20%;
+    line-height: 1;
+}
+.welcome h1 {
+    color: #202020;
+}
+.welcome p {
+    font-size: 18px;
+    color: #fff;
+}
+.welcome button {
+    font-size: 18px;
+    background-color: #040202;
+    border: none;
+    padding: 8px 30px;
+    border-radius: 2mm;
+    color: #fef6f6;
+}
+/* SIDEBAR */
+.sear input {
+    padding: 15px 10px;
+    outline: none;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+.sear input::placeholder {
+    font-size: 15px;
+    color: #ede3e3;
+}
+.simi p {
+    border-bottom: 0.5px solid rgb(231, 231, 237);
+    padding: 15px 5px;
+    text-transform: uppercase;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    background-color: #fff;
+}
+.simi p:hover {
+    background-color: #f8f0f0;
+}
+/* END OF SIDEBAR */
+/* MEANINGS */
+.means h1 {
+    font-size: 45px;
+}
+.means b {
+    font-weight: 200;
+    font-size: 18px;
+}
+.means h4 {
+    font-size: 25px;
+}
+.elect {
+    padding: 10px 0px;
+}
+.means summary li {
+    padding: 10px 0px;
+}
+.means summary li::marker {
+    color: #665e1da6;
+}
+/* END OF MEANINGS */
+
+/* Responsiveness */
+@media (max-width:480px) {
+    .navbar h2 {
+        font-size: 18px;
+    }
+    .navbar button {
+        border: none;
+        background-color: transparent;
+        font-size: 15px;
+        color: black;
+    }
+    .means h1 {
+        font-size: 30px;
+    } 
+    .spilt {
+        padding: 15px 2px;
+        gap: 30px;
+    }
+    .theinput {
+        width: 120%;
+        border: 0.5mm solid black;
+    }
+    .sear input {
+        padding: 10px 0px;
+        outline: none;
+        border: none;
+        width: 100%;
+    }
+    .sear input::placeholder {
+        font-size: 12px;
+    }
+    .simi p{
+        padding: 10px 10px;
+        font-size: 14px;
+        text-align: left;
+    }
+    .means {
+        line-height: 1.2;
+    }
+    
+}
+/* End of Responsiveness */
